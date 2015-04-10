@@ -1,5 +1,5 @@
 """
-Django settings for helcore project.
+Django settings for hel project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -48,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'helcore.urls'
+ROOT_URLCONF = 'hel.urls'
 
-WSGI_APPLICATION = 'helcore.wsgi.application'
+WSGI_APPLICATION = 'hel.wsgi.application'
 
 
 # Database
