@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -37,9 +36,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'polls',
+    'login',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -103,3 +103,7 @@ TEMPLATES = [
         },
     },
 ]
+
+# Needed for login
+import django.contrib.auth
+django.contrib.auth.LOGIN_URL = '/'
