@@ -8,5 +8,5 @@ urlpatterns = [
     url(r'^polls/', include('polls.urls', namespace='polls')),
     url(r'^pages/', include('django.contrib.flatpages.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^polls/', include('login.urls', namespace='login')),
+    url(r'^account/', include('login.urls', namespace='login')),
 ]
