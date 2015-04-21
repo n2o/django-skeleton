@@ -6,6 +6,7 @@ It contains the polls app from the official Django tutorial and I created a simp
 
 Featuring:
 * Django 1.8.0
+* User registration and authentication in the frontend
 * Bootstrap 3.3.4
 * Bootstrap Theme *Slate*
 * Fontawesome Icons 4.3.0
