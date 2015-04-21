@@ -21,17 +21,17 @@ def register(request):
     else:
         form = RegistrationForm()
     variables = RequestContext(request, {
-    'form': form
+        'form': form
     })
 
     return render_to_response(
-    'registration/register.html',
-    variables,
+        'registration/register.html',
+        variables,
     )
 
 def register_success(request):
     return render_to_response(
-    'registration/success.html',
+        'registration/success.html',
     )
 
 def logout_page(request):
@@ -41,6 +41,6 @@ def logout_page(request):
 @login_required
 def home(request):
     return render_to_response(
-    'index.html',
-    { 'user': request.user }
+        'index.html',
+        { 'user': request.user }
     )
