@@ -60,12 +60,19 @@
               </ul>
             </li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/account">Login</a></li>
+            <li><a href="/account/register">Registrieren</a></li>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
+    <div class="container">
+      {% block heading %}{% endblock %}
+    </div>
+
     <div class="container" role="main">
-      {% block header %}{% endblock %}
       {% block content %}{% endblock %}
     </div>
 

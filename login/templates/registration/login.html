@@ -1,16 +1,32 @@
 {% extends "base.html" %}
 
+{% block heading %}
+  <h1>Login</h1>
+{% endblock %}
+
 {% block content %}
-    {% if form.errors %}
-        <p>Your username and password didn't match. Please try again.</p>
-    {% endif %}
-    <form method="post" action=".">{% csrf_token %}
-        <table border="0">
-            <tr><th><label for="id_username">Username:</label></th><td>{{ form.username }}</td></tr>
-            <tr><th><label for="id_password">Password:</label></th><td>{{ form.password }}</td></tr>
-        </table>
-        <input type="submit" value="Login" />
-        <input type="hidden" name="next" value="/" />
-    </form>
-    <a href="/account/register">Register</a>
+  {% if form.errors %}
+    <p>Der Benutzername und das Passwort passen nicht zusammen.</p>
+  {% endif %}
+  <form method="post" action=".">{% csrf_token %}
+    <div class="row">
+      <div class="col-md-2">
+        <label for="id_username">Benutzername:</label>
+      </div>
+      <div class="col-md-2">
+        {{ form.username }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <label for="id_password">Passwort:</label>
+      </div>
+      <div class="col-md-2">
+        {{ form.password }}
+      </div>
+    </div>
+    <input type="submit" value="Login" class="btn"/>
+    <input type="hidden" name="next" value="/" />
+  </form>
+  <a href="/account/register">Registrieren</a>
 {% endblock %}

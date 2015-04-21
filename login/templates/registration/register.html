@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 
+{% block heading %}
+  <h1>Registrierung</h1>
+{% endblock %}
+
 {% block content %}
-    <form method="post" action=".">{% csrf_token %}
-        <table border="0">
-            {{ form.as_table }}
-        </table>
-        <input type="submit" value="Register" />
-    </form>
-    <a href="/">Login</a>
+  <form method="post" action=".">{% csrf_token %}
+    <table border="0">
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Register" />
+  </form>
+  <a href="/account">Login</a>
 {% endblock %}
