@@ -1,5 +1,5 @@
 """
-Django settings for hel project.
+Django settings for core project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -53,9 +53,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
-ROOT_URLCONF = 'hel.urls'
+ROOT_URLCONF = 'core.urls'
 
-WSGI_APPLICATION = 'hel.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 
 # Database
