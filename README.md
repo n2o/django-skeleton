@@ -11,4 +11,8 @@ Featuring:
 * Bootstrap Theme *Slate*
 * Fontawesome Icons 4.3.0
 
+
+## Change your Secret Key
+I recognize several people cloning this repository. Please do not forget to change `SECRET_KEY` in your `settings.py` file.
+
 Clone / Fork it and have fun :-)
