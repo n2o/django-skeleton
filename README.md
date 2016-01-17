@@ -1,4 +1,4 @@
-# Django 1.9 Skeleton
+# Django 1.9.1 Skeleton
 
 This is a Django Skeleton to start a new Project nearly from scratch.
 
