@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block heading %}
-  <h1>Registrierung</h1>
+  <h1>Register</h1>
 {% endblock %}
 
 {% block content %}
@@ -13,6 +13,6 @@
   </form>
   <p>
     <br>
-    <a href="/account">Login</a>
+    <a href="{% url 'account:login' %}">Login</a>
   </p>
 {% endblock %}

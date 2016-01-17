@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-    Thank you for registering.
-    <a href="/account">Login</a>
+  Thank you for registering.
+  <a href="{% url 'account:login' %}">Login</a>
 {% endblock %}
