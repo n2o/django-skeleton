@@ -61,8 +61,22 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/account">Login</a></li>
-            <li><a href="/account/register">Registrieren</a></li>
+            {% if user.is_authenticated %}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member's Area <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  {% if user.is_staff %}
+                    <li><a href="{% url 'admin:index' %}">Admin Panel</a></li>
+                    <li class="divider"></li>
+                  {% endif %}
+                  <li><a href="#">Logged in as {{ user }}</a></li>
+                  <li><a href="{% url 'account:logout' %}">Logout</a></li>
+                </ul>
+              </li>
+            {% else %}
+              <li><a href="{% url 'account:login' %}">Login</a></li>
+              <li><a href="{% url 'account:register' %}">Register</a></li>
+            {% endif %}
           </ul>
         </div><!--/.nav-collapse -->
       </div>
