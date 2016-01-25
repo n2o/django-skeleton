@@ -29,14 +29,17 @@ def register(request):
         variables,
     )
 
+
 def register_success(request):
     return render_to_response(
         'registration/success.html',
     )
 
+
 def logout_page(request):
     logout(request)
     return HttpResponseRedirect('/')
+
 
 @login_required
 def home(request):
