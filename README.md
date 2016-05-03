@@ -1,11 +1,11 @@
-# Django 1.9.5 Skeleton
+# Django 1.9.6 Skeleton
 
 This is a Django Skeleton to start a new Project nearly from scratch.
 
 It contains the polls app from the official Django tutorial and I use a simple Bootstrap Theme.
 
 Featuring:
-* Django 1.9.5
+* Django 1.9.6
 * User registration and authentication in the frontend
 * Bootstrap 3.3.6
 * Bootstrap Theme *Paper*
