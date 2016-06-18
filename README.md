@@ -14,7 +14,7 @@ Featuring:
 * Fontawesome Icons 4.6.1
 
 ## Build Status
-This repository uses Travis CI and is tested with Python 2.7, 3.3+
+This repository uses [Travis CI](https://travis-ci.org/n2o/django-skeleton) and is tested with Python 2.7, 3.3+.
 
 ## Change your Secret Key
 I recognize several people cloning this repository. Please do not forget to change `SECRET_KEY` in your `settings.py` file.
