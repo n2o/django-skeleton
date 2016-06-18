@@ -1,5 +1,7 @@
 # Django 1.9.7 Skeleton
 
+![Travis CI](https://api.travis-ci.org/n2o/django-skeleton.svg?branch=master)
+
 This is a Django Skeleton to start a new Project nearly from scratch.
 
 It contains the polls app from the official Django tutorial and I use a simple Bootstrap Theme.
