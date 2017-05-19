@@ -1,4 +1,4 @@
-# Django 1.10 Skeleton
+# Django 1.11 Skeleton
 
 ![Travis CI](https://api.travis-ci.org/n2o/django-skeleton.svg?branch=master)
 
@@ -7,7 +7,7 @@ This is a Django Skeleton to start a new Project nearly from scratch.
 It contains the polls app from the official Django tutorial and uses a simple Bootstrap Theme and Font Awesome Icons.
 
 Featuring:
-* Django 1.10.4
+* Django 1.11
 * User registration and authentication in the frontend
 * Bootstrap 3.3.6
 * Bootstrap Theme *Paper*
