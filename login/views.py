@@ -2,9 +2,8 @@ from login.forms import *
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.views.decorators.csrf import csrf_protect
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 from django.http import HttpResponseRedirect
-from django.template import RequestContext
 
 
 @csrf_protect
@@ -20,20 +19,13 @@ def register(request):
             return HttpResponseRedirect('/account/register/success/')
     else:
         form = RegistrationForm()
-    variables = RequestContext(request, {
-        'form': form
-    })
+    variables = {'form': form}
 
-    return render_to_response(
-        'registration/register.html',
-        variables,
-    )
+    return render(request, 'registration/register.html', variables)
 
 
 def register_success(request):
-    return render_to_response(
-        'registration/success.html',
-    )
+    return render(request, 'registration/success.html')
 
 
 def logout_page(request):
@@ -43,7 +35,4 @@ def logout_page(request):
 
 @login_required
 def home(request):
-    return render_to_response(
-        'index.html',
-        {'user': request.user}
-    )
+    return render(request, 'index.html', {'user': request.user})
